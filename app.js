@@ -1,10 +1,10 @@
-const car = (name, model, owner, year, phone, image) => ({ name, model, owner, year, phone, image });
+const car = (name, model, owner, year, phone, image, id) => ({ name, model, owner, year, phone, image, id });
 const log = (text, type, date = new Date()) => ({ text, type, date });
 
 const cars = [
-	car('Ford', 'Focus', 'Max', 2016, '+7 929 123 45 67', 'images/focus.jpg'),
-	car('Ford', 'Mondeo', 'Dan', 2018, '+7 929 143 65 67', 'images/mondeo.jpg'),
-	car('Porshe', 'Panamera', 'Nik', 2020, '+7 916 143 65 67', 'images/panamera.jpg')
+	car('Ford', 'Focus', 'Max', 2016, '+7 929 123 45 67', 'images/focus.jpg', 0),
+	car('Ford', 'Mondeo', 'Dan', 2018, '+7 929 143 65 67', 'images/mondeo.jpg', 1),
+	car('Porshe', 'Panamera', 'Nik', 2020, '+7 916 143 65 67', 'images/panamera.jpg', 2)
 ];
 
 new Vue({
